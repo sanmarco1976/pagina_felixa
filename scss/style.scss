@@ -1,0 +1,216 @@
+@import "variables";
+@import "colores";
+@import "tipografia";
+@import "img";
+@import "operaciones";
+.navegacion {
+    display: grid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    grid-template-areas: "logo items";
+    .navegacion__logo {
+        grid-area: logo;
+    }
+    .navegacion_items {
+        grid-area: items;
+        .itemTexto {
+            margin-right: 1rem;
+        }
+    }
+    .navbar-collapse {
+        flex-grow: 0.1!important;
+    }
+    .form-control {
+        border-radius: 1rem;
+    }
+    .btn {
+        border-radius: 1rem;
+    }
+}
+.encabezado_todos,.encabezado,.encabezado_nigth, .encabezado_new{
+    margin-top: 5rem;
+}
+
+.texto_inicio {
+    margin-top: 4rem;
+}
+
+.frase_incio {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imagenes/principal_3_rec2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 12rem;
+    opacity: 0.5;
+}
+
+.encabezado_todos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imagenes/todos_los_productos.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 12rem;
+    opacity: 0.5;
+}
+
+.encabezado_nigth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imagenes/prod_nigth_fondo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 12rem;
+    opacity: 0.5;
+}
+.encabezado_new{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imagenes/fondo-new.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 12rem;
+    opacity: 0.5;
+}
+.productosAll {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "b1 b2 b3 b4 " "b5 b6 b7 b8" "b9 b10 b11 b12" "b13 b14 b15 b16" "b17 b18 b19 b20";
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    margin: 1rem;
+}
+
+#secCate {
+    justify-items: center;
+    align-items: center;
+    overflow: auto;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.divCate1 {
+    grid-area: b1;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.divCate1 {
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-areas: "img" "nom" "des" "option";
+    margin: 1rem;
+    width: auto;
+}
+
+.opciones {
+    grid-area: option;
+    display: grid;
+    justify-items: center;
+    margin-bottom: 1rem;
+    .talles {
+        margin-bottom: 1rem;
+    }
+}
+
+.divCate1__pCate {
+    grid-area: nom;
+    align-self: center;
+}
+
+.divCate1__imgCate,
+.divCate1__imgCate_1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    grid-area: img;
+}
+
+.divCate1 .divCate1__imgCate_1 {
+    display: none;
+}
+
+.divCate1:hover .divCate1__imgCate_1 {
+    display: block;
+}
+
+.divCate1:hover .divCate1__imgCate {
+    display: none;
+}
+
+.descripcion {
+    text-transform: capitalize;
+    grid-area: des;
+}
+
+.descripcion--mayor {
+    margin-bottom: 1rem;
+}
+
+.btn-outline-warning {
+    width: auto;
+    align-self: flex-end;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+.footer {
+    display: grid;
+    margin-top: 1rem;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1.3fr 1fr;
+    grid-template-areas: "logo none lista ";
+    align-items: center;
+    .footer__info {
+        grid-area: logo;
+    }
+    .footer__lista {
+        grid-area: lista;
+        .lista__li,
+        .lista__a {
+            text-decoration: none;
+        }
+        .linea {
+            margin: 0rem;
+            width: 10rem;
+        }
+    }
+}
+
+#tablaDom {
+    margin-left: 1rem;
+}
+
+#comprar-carrito {
+    width: 10rem!important;
+}
+
+.offcanvas {
+    width: 60%;
+    height: 60%;
+}
+
+.barraCelu {
+    display: none;
+}
+.finalPagina + div,.disclaimer{
+    visibility: hidden;
+}
+@import "responsive";

@@ -1,0 +1,11 @@
+@for $i from 1 through 40 {
+    .divCate-#{$i} {
+        grid-area: b#{$i}
+    }
+}
+
+@for $i from 1 through 40 {
+    .divCate1--divCate#{$i} {
+        @extend .divCate1
+    }
+}

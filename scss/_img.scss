@@ -1,0 +1,52 @@
+.imagen_lupa {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.nav__logo {
+    width: 8rem;
+    height: 6rem;
+}
+
+.imagen_inicio {
+    height: 40rem;
+}
+
+.divCate1__imgCate,
+.divCate1__imgCate_1 {
+    width: 19rem;
+    height: 27rem;
+}
+
+.insta_footer {
+    width: 2rem;
+    height: 2rem;
+}
+
+.carritoComprasNav {
+    width: 2rem;
+    height: 2rem;
+}
+
+.selectorImagenes{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.imgChica, .imgChica2{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    object-fit: cover;
+    opacity: .5;
+    transition: .3s;
+    margin-right: 5px;
+}
+.imgChica:hover, .imgChica2:hover{
+    opacity: 1;
+}
+.imgActive, .imgActive2{
+    opacity: 1;
+    box-shadow: 0 5px 5px rgba(1, 23, 46, 0.6);
+}

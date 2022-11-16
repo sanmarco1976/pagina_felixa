@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="_t-7XTSB9snd4A3TPx8kzEplicI8cRTD-JYQ7H7yVwo" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconectar" href="https://fonts.googleapis.com">
+    <link rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? family= Calabacín & display=swap" rel="hoja de estilo">
+    <link rel="icon" href="../imagenes/logo_felixa.jpg">
+    <title>Felixa</title>
+    <meta name="description" content="Este es el sitio web de Felixa, el cual se encarga de la venta minorista, de la venta mayorista y la distribucion de una amplia variedad de articulos">
+    <meta name="keywords" content="Productos">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid navegacion">
+            <a href="../index.html" class="navegacion__logo"><img class="nav__logo" src="../imagenes/logo_felixa.jpg"></a>
+            <div class="collapse navbar-collapse navegacion_items  " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item itemTexto"><a class="nav-link " aria-current="page" href="../index.html">inicio</a></li>
+                    <li class="nav-item itemTexto"><a class="nav-link" href="contacto.html">contacto</a></li>
+                    <li class="nav-item dropdown itemTexto">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">productos</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li class="itemDesplegable"><a class="dropdown-item" href="prodTodos.html">todos los productos</a></li>
+                            <li class="itemDesplegable"><a class="dropdown-item" href="prodAllDay.html">ALL-DAY</a></li>
+                            <li class="itemDesplegable"><a class="dropdown-item" href="prodNigth.html">NIGTH</a></li>
+                            <li class="itemDesplegable"><a class="dropdown-item" href="newCollection.html">NEW-COLLECTION</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button id="botonCarritoo" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img  class ="carritoComprasNav" src="/imagenes/carrito-de-compras (1).png"></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-light bg-light fixed-top barraCelu">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="/index.html" class="navegacion__logo"><img class="nav__logo" src="/imagenes/logo_felixa.jpg"></a>
+            <button id="botonCarritoo" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img  class ="carritoComprasNav" src="/imagenes/carrito-de-compras (1).png"></button>
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title navBarh5" id="offcanvasNavbarLabel">FELIXA</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categorias
+                  </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item" href="prodTodos.html">TODOS LOS PRODUCTOS</a></li>
+                                <li><a class="dropdown-item" href="prodAllDay.html">ALL-DAY</a></li>
+                                <li><a class="dropdown-item" href="prodNigth.html">NIGTH</a></li>
+                                <li><a class="dropdown-item" href="newCollection.html">NEW-COLLECTION</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="principio" class="encabezado_todos">
+        <p class="encabezado_p">TODOS LOS PRODUCTOS
+        </p>
+    </div>
+    <div>
+        <div id="productosAllday" class="productosAll">
+            <section id="secCate">
+                <div class="divCate1 item">
+                    <img src="/imagenes/top-brillo-tiras.jpg" class="divCate1__imgCate">
+                    <img src="/imagenes/top-brillo-tiras-atras.jpg" class="divCate1__imgCate_1">
+                    <p class="divCate1__pCate">TOP BRILLO TIRAS</p>
+                    <ul>
+                        <li class="descripcion">$3900</li>
+                        <div class="opciones">
+                            <select class="talles">
+                                <option value="P">P</option>
+                                <option value="M">M</option>
+                                <option value="G">G</option>
+                            </select>
+                            <select class="colores">
+                                <option value="NEGRO">NEGRO</option>
+                            </select>
+                        </div>
+                        <button type="button" class="agregar_al_carro btn btn-outline-warning add" data-id="21">Agregar Al Carrito</button>
+                    </ul>
+                </div>
+            </section>
+            <section id="secCate">
+                <div class="divCate1 item">
+                    <img src="/imagenes/top-sol.jpg" class="divCate1__imgCate">
+                    <img src="/imagenes/top-sol-atras.jpg" class="divCate1__imgCate_1">
+                    <p class="divCate1__pCate">TOP SOL</p>
+                    <ul>
+                        <li class="descripcion">$3700</li>
+                        <div class="opciones">
+                            <select class="talles">
+                                <option value="TALLE UNICO">TALLE UNICO</option>
+                            </select>
+                            <select class="colores">
+                                <option value="NEGRO">NEGRO</option>
+                            </select>
+                        </div>
+                        <button type="button" class="agregar_al_carro btn btn-outline-warning add" data-id="15">Agregar Al Carrito</button>
+                    </ul>
+                </div>
+            </section>
+            <section id="secCate">
+                <div class="divCate1 item">
+                    <img src="/imagenes/top-malla-colores.jpg" class="divCate1__imgCate">
+                    <img src="/imagenes/top-malla-colores-atras.jpg" class="divCate1__imgCate_1 imgMain">
+                    <p class="divCate1__pCate">TOP MALLA</p>
+                    <ul>
+                        <li class="descripcion">$3600</li>
+                        <div class="opciones">
+                            <select class="talles">
+                                <option value="P">P</option>
+                                <option value="PP">PP</option>
+                                <option value="M">M</option>
+                                <option value="G">G</option>
+                            </select>
+                            <select class="colores">
+                                <option value="VERDE">VERDE</option>
+                                <option value="ROSA">ROSA</option>
+                                <option value="AMARILLO">AMARILLO</option>
+                            </select>
+                        </div>
+                        <div class="selectorImagenes">
+                            <img src="/imagenes/top-malla-colores-abajo.jpg" class="imgChica imgActive">
+                            <img src="/imagenes/top-malla-verde.jpg" class="imgChica">
+                            <img src="/imagenes/top-malla-rosa.jpg" class="imgChica">
+                            <img src="/imagenes/top-malla-amarillo.jpg" class="imgChica">
+                        </div>
+                        <button type="button" class="agregar_al_carro btn btn-outline-warning add" data-id="15">Agregar Al Carrito</button>
+                    </ul>
+                </div>
+            </section>
+            <section id="secCate">
+                <div class="divCate1 item">
+                    <img src="/imagenes/triangulos-colores.jpg" class="divCate1__imgCate">
+                    <img src="/imagenes/triangulos-colores2.jpg" class="divCate1__imgCate_1 imgMain2">
+                    <p class="divCate1__pCate">TRIÁNGULO</p>
+                    <ul>
+                        <li class="descripcion">$3500</li>
+                        <div class="opciones">
+                            <select class="talles">
+                                <option value="P">P</option>
+                                <option value="PP">PP</option>
+                                <option value="M">M</option>
+                                <option value="G">G</option>
+                            </select>
+                            <select class="colores">
+                                <option value="VERDE">VERDE</option>
+                                <option value="ROSA">ROSA</option>
+                                <option value="AMARILLO">AMARILLO</option>
+                            </select>
+                        </div>
+                        <div class="selectorImagenes">
+                            <img src="/imagenes/triangulos-colores-abajo.jpg" class="imgChica2 imgActive2">
+                            <img src="/imagenes/triangulo-rosa.jpg" class="imgChica2">
+                            <img src="/imagenes/triangulo-verde.jpg" class="imgChica2">
+                            <img src="/imagenes/triangulo-amarillo.jpg" class="imgChica2">
+                        </div>
+                        <button type="button" class="agregar_al_carro btn btn-outline-warning add" data-id="17">Agregar Al Carrito</button>
+                    </ul>
+                </div>
+            </section>
+            <section id="secCate">
+                <div class="divCate1 item">
+                    <img src="/imagenes/brillo-dorado.jpg" class="divCate1__imgCate">
+                    <img src="/imagenes/brillo-negro.jpg" class="divCate1__imgCate_1">
+                    <p class="divCate1__pCate">TOP BRILLO</p>
+                    <ul>
+                        <li class="descripcion">$3700</li>
+                        <div class="opciones">
+                            <select class="talles">
+                                <option value="P">P</option>
+                                <option value="PP">PP</option>
+                                <option value="M">M</option>
+                                <option value="G">G</option>
+                            </select>
+                            <select class="colores">
+                                <option value="DORADO">DORADO</option>
+                                <option value="NEGRO">NEGRO</option>
+                            </select>
+                        </div>
+                        <button type="button" class="agregar_al_carro btn btn-outline-warning add" data-id="18">Agregar Al Carrito</button>
+                    </ul>
+                </div>
+            </section>
+            <section id="secCate">
+                <div class="divCate1 item">
+                    <img src="/imagenes/calza-print.jpg" class="divCate1__imgCate">
+                    <img src="/imagenes/calza-print.jpg" class="divCate1__imgCate_1">
+                    <p class="divCate1__pCate">CALZA CORTA PRINT</p>
+                    <ul>
+                        <li class="descripcion">$2900</li>
+                        <div class="opciones">
+                            <select class="talles">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <select class="colores">
+                                <option value="PRINT">PRINT</option>
+                            </select>
+                        </div>
+                        <button type="button" class="agregar_al_carro btn btn-outline-warning add" data-id="19">Agregar Al Carrito</button>
+                    </ul>
+                </div>
+            </section>
+            <section id="secCate">
+                <div class="divCate1 item">
+                    <img src="/imagenes/calza-negra.jpg" class="divCate1__imgCate">
+                    <img src="/imagenes/calza-rosa.jpg" class="divCate1__imgCate_1">
+                    <p class="divCate1__pCate">CALZA CORTA</p>
+                    <ul>
+                        <li class="descripcion">$2700</li>
+                        <div class="opciones">
+                            <select class="talles">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <select class="colores">
+                                <option value="NEGRO">NEGRO</option>
+                                <option value="ROSA">ROSA</option>
+                            </select>
+                        </div>
+                        <button type="button" class="agregar_al_carro btn btn-outline-warning add" data-id="20">Agregar Al Carrito</button>
+                    </ul>
+                </div>
+            </section>
+            <section id="secCate">
+                <div class="divCate1 item">
+                    <img src="/imagenes/prod_lety.jpg" class="divCate1__imgCate">
+                    <img src="/imagenes/prod_lety2.jpg" class="divCate1__imgCate_1">
+                    <p class="divCate1__pCate">CONJUNTO LETY</p>
+                    <ul>
+                        <li class="descripcion">$1500</li>
+                        <div class="opciones">
+                            <select class="talles">
+                                <option value="P">P</option>
+                                <option value="PP">PP</option>
+                                <option value="M">M</option>
+                                <option value="G">G</option>
+                            </select>
+                            <select class="colores">
+                                <option value="BLANCO">BLANCO</option>
+                                <option value="GRISO">GRIS OSCURO</option>
+                                <option value="GRISC">GRIS CLARO</option>
+                                <option value="MARRON">MARRON</option>
+                                <option value="TERRACOTA">TERRACOTA</option>
+                                <option value="LILA">LILA</option>
+                            </select>
+                        </div>
+                        <button type="button" class="agregar_al_carro btn btn-outline-warning add" data-id="1">Agregar Al Carrito</button>
+                    </ul>
+                </div>
+            </section>
+            <section id="secCate">
+                <div class="divCate1 item">
+                    <img src="/imagenes/pijama_anastasia.jpg" class="divCate1__imgCate">
+                    <img src="/imagenes/pijama_anastasia2.jpg" class="divCate1__imgCate_1">
+                    <p class="divCate1__pCate">PIJAMA ANASTASIA</p>
+                    <ul>
+                        <li class="descripcion">$2000</li>
+                        <div class="opciones">
+                            <select class="talles">
+                                <option value="P">P</option>
+                                <option value="PP">PP</option>
+                                <option value="M">M</option>
+                                <option value="G">G</option>
+                            </select>
+                            <select class="colores">
+                                <option value="CRUDO">CRUDO</option>
+                                <option value="ROSA">ROSA</option>
+                                <option value="GRISC">GRIS CLARO</option>
+                                <option value="VERDE">VERDE</option>
+                                <option value="TERRACOTA">TERRACOTA</option>
+                                <option value="LILA">LILA</option>
+                            </select>
+                        </div>
+                        <button type="button" class="agregar_al_carro btn btn-outline-warning add" data-id="2">Agregar Al Carrito</button>
+                    </ul>
+                </div>
+            </section>
+            <section id="secCate">
+                <div class="divCate1 item">
+                    <img src="/imagenes/conj_julia.jpg" class="divCate1__imgCate">
+                    <img src="/imagenes/conj_julia2.jpg" class="divCate1__imgCate_1">
+                    <p class="divCate1__pCate">CONJUNTO JULIA</p>
+                    <ul>
+                        <li class="descripcion">$1500</li>
+                        <div class="opciones">
+                            <select class="talles">
+                                <option value="P">P</option>
+                                <option value="PP">PP</option>
+                                <option value="M">M</option>
+                                <option value="G">G</option>
+                            </select>
+                            <select class="colores">
+                                <option value="GRISO">GRIS OSCURO</option>
+                                <option value="NEGRO">NEGRO</option>
+                                <option value="GRISC">GRIS CLARO</option>
+                                <option value="VERDE">VERDE</option>
+                                <option value="TERRACOTA">TERRACOTA</option>
+                                <option value="LILA">LILA</option>
+                                <option value="BLANCO">BLANCO</option>
+                                <option value="MOSTAZA">MOSTAZA</option>
+                            </select>
+                        </div>
+                        <button type="button" class="agregar_al_carro btn btn-outline-warning add" data-id="3">Agregar Al Carrito</button>
+                    </ul>
+                </div>
+            </section>
+            <section id="secCate">
+                <div class="divCate1 item">
+                    <img src="/imagenes/conj_ana.jpg" class="divCate1__imgCate">
+                    <img src="/imagenes/conj_ana2.jpg" class="divCate1__imgCate_1">
+                    <p class="divCate1__pCate">CONJUNTO ANNA</p>
+                    <ul>
+                        <li class="descripcion">$1500</li>
+                        <div class="opciones">
+                            <select class="talles">
+                                <option value="P">P</option>
+                                <option value="PP">PP</option>
+                                <option value="M">M</option>
+                                <option value="G">G</option>
+                            </select>
+                            <select class="colores">
+                                <option value="NEGRO">NEGRO</option>
+                                <option value="VERDE">VERDE</option>
+                                <option value="TERRACOTA">TERRACOTA</option>
+                                <option value="LILA">LILA</option>
+                            </select>
+                        </div>
+                        <button type="button" class="agregar_al_carro btn btn-outline-warning add" data-id="4">Agregar Al Carrito</button>
+                    </ul>
+                </div>
+            </section>
+            <section id="secCate">
+                <div class="divCate1 item">
+                    <img src="/imagenes/conj_stella.jpg" class="divCate1__imgCate">
+                    <img src="/imagenes/conj_stella2.jpg" class="divCate1__imgCate_1">
+                    <p class="divCate1__pCate">CONJUNTO STELLA</p>
+                    <ul>
+                        <li class="descripcion">$1500</li>
+                        <div class="opciones">
+                            <select class="talles">
+                                <option value="P">P</option>
+                                <option value="PP">PP</option>
+                                <option value="M">M</option>
+                                <option value="G">G</option>
+                            </select>
+                            <select class="colores">
+                                <option value="GRISO">GRIS OSCURO</option>
+                                <option value="GRISC">GRIS CLARO</option>
+                                <option value="MARRON">MARRON</option>
+                                <option value="TERRACOTA">TERRACOTA</option>
+                                <option value="LILA">LILA</option>
+                                <option value="BLANCO">BLANCO</option>
+                            </select>
+                        </div>
+                        <button type="button" class="agregar_al_carro btn btn-outline-warning add" data-id="5">Agregar Al Carrito</button>
+                    </ul>
+                </div>
+            </section>
+            <section id="secCate">
+                <div class="divCate1 item">
+                    <img src="/imagenes/conj_lis.jpeg" class="divCate1__imgCate">
+                    <img src="/imagenes/conj_lis.jpeg" class="divCate1__imgCate_1">
+                    <p class="divCate1__pCate">CONJUNTO LIS</p>
+                    <ul>
+                        <li class="descripcion">$1500</li>
+                        <div class="opciones">
+                            <select class="talles">
+                                <option value="P">P</option>
+                                <option value="PP">PP</option>
+                                <option value="M">M</option>
+                                <option value="G">G</option>
+                            </select>
+                            <select class="colores">
+                                <option value="BLANCO">BLANCO</option>
+                                <option value="NEGRO">NEGRO</option>
+                            </select>
+                        </div>
+                        <button type="button" class="agregar_al_carro btn btn-outline-warning add" data-id="15">Agregar Al Carrito</button>
+                    </ul>
+                </div>
+            </section>
+            <section id="secCate">
+                <div class="divCate1 item">
+                    <img src="/imagenes/conj_guada.jpg" class="divCate1__imgCate">
+                    <img src="/imagenes/conj_guada2.jpg" class="divCate1__imgCate_1">
+                    <p class="divCate1__pCate">CONJUNTO GUADA</p>
+                    <ul>
+                        <li class="descripcion">$1000</li>
+                        <div class="opciones">
+                            <select class="talles">
+                                <option value="P">P</option>
+                                <option value="PP">PP</option>
+                                <option value="M">M</option>
+                                <option value="G">G</option>
+                            </select>
+                            <select class="colores">
+                                <option value="BLANCO">BLANCO</option>
+                            </select>
+                        </div>
+                        <button type="button" class="agregar_al_carro btn btn-outline-warning add" data-id="6">Agregar Al Carrito</button>
+                    </ul>
+                </div>
+            </section>
+            <section id="secCate">
+                <div class="divCate1 item">
+                    <img src="/imagenes/conj_patry.jpg" class="divCate1__imgCate">
+                    <img src="/imagenes/conj_patry.jpg" class="divCate1__imgCate_1">
+                    <p class="divCate1__pCate">CONJUNTO PATRY</p>
+                    <ul>
+                        <li class="descripcion">$1500</li>
+                        <div class="opciones">
+                            <select class="talles">
+                                <option value="P">P</option>
+                                <option value="PP">PP</option>
+                                <option value="M">M</option>
+                                <option value="G">G</option>
+                            </select>
+                            <select class="colores">
+                                <option value="BLANCO">BLANCO</option>
+                                <option value="LILA">LILA</option>
+                                <option value="NEGRO">NEGRO</option>
+                            </select>
+                        </div>
+                        <button type="button" class="agregar_al_carro btn btn-outline-warning add" data-id="16">Agregar Al Carrito</button>
+                    </ul>
+                </div>
+            </section>
+            <section id="secCate">
+                <div class="divCate1 item">
+                    <img src="/imagenes/conj_aurora.jpg" class="divCate1__imgCate">
+                    <img src="/imagenes/conj_aurora2.jpg" class="divCate1__imgCate_1">
+                    <p class="divCate1__pCate">CONJUNTO AURORA</p>
+                    <ul>
+                        <li class="descripcion">$1500</li>
+                        <div class="opciones">
+                            <select class="talles">
+                                <option value="P">P</option>
+                                <option value="PP">PP</option>
+                                <option value="M">M</option>
+                                <option value="G">G</option>
+                            </select>
+                            <select class="colores">
+                                <option value="BLANCO">BLANCO</option>
+                                <option value="NEGRO">NEGRO</option>
+                            </select>
+                        </div>
+                        <button type="button" class="agregar_al_carro btn btn-outline-warning add" data-id="7">Agregar Al Carrito</button>
+                    </ul>
+                </div>
+            </section>
+            <section id="secCate">
+                <div class="divCate1 item">
+                    <img src="/imagenes/conj_maite.jpeg" class="divCate1__imgCate">
+                    <img src="/imagenes/conj_maite.jpeg" class="divCate1__imgCate_1">
+                    <p class="divCate1__pCate">CONJUNTO MAITE</p>
+                    <ul>
+                        <li class="descripcion">$2000</li>
+                        <div class="opciones">
+                            <select class="talles">
+                                <option value="P">P</option>
+                                <option value="PP">PP</option>
+                                <option value="M">M</option>
+                                <option value="G">G</option>
+                            </select>
+                            <select class="colores">
+                                <option value="BLANCO">BLANCO</option>
+                                <option value="NEGRO">NEGRO</option>
+                                <option value="TOSTADO">TOSTADO</option>
+                            </select>
+                        </div>
+                        <button type="button" class="agregar_al_carro btn btn-outline-warning add" data-id="17">Agregar Al Carrito</button>
+                    </ul>
+                </div>
+            </section>
+            <section id="secCate">
+                <div class="divCate1 item">
+                    <img src="/imagenes/conj_uma.jpeg" class="divCate1__imgCate">
+                    <img src="/imagenes/conj_uma.jpeg" class="divCate1__imgCate_1">
+                    <p class="divCate1__pCate">CONJUNTO UMA</p>
+                    <ul>
+                        <li class="descripcion">$1500</li>
+                        <div class="opciones">
+                            <select class="talles">
+                                <option value="P">P</option>
+                                <option value="PP">PP</option>
+                                <option value="M">M</option>
+                                <option value="G">G</option>
+                            </select>
+                            <select class="colores">
+                                <option value="BLANCO">BLANCO</option>
+                                <option value="NEGRO">NEGRO</option>
+                            </select>
+                        </div>
+                        <button type="button" class="agregar_al_carro btn btn-outline-warning add" data-id="18">Agregar Al Carrito</button>
+                    </ul>
+                </div>
+            </section>
+            <section id="secCate">
+                <div class="divCate1 item">
+                    <img src="/imagenes/mangas.jpg" class="divCate1__imgCate">
+                    <img src="/imagenes/mangas.jpg" class="divCate1__imgCate_1">
+                    <p class="divCate1__pCate">MANGUITAS</p>
+                    <ul>
+                        <li class="descripcion">$500</li>
+                        <div class="opciones">
+                            <select class="talles">
+                                <option value="P">P/M</option>
+                                <option value="G">M/G</option>
+                            </select>
+                            <select class="colores">
+                                <option value="NEGRO">NEGRO</option>
+                                <option value="NARANJA">NARANJA</option>
+                            </select>
+                        </div>
+                        <button type="button" class="agregar_al_carro btn btn-outline-warning add" data-id="8">Agregar Al Carrito</button>
+                    </ul>
+                </div>
+            </section>
+            <section id="secCate">
+                <div class="divCate1 item">
+                    <img src="/imagenes/top_felicitas.jpg" class="divCate1__imgCate">
+                    <img src="/imagenes/top_felicitas2.jpg" class="divCate1__imgCate_1">
+                    <p class="divCate1__pCate">TOP FELICITAS</p>
+                    <ul>
+                        <li class="descripcion">$1000</li>
+                        <div class="opciones">
+                            <select class="talles">
+                                <option value="P">P</option>
+                                <option value="M">M</option>
+                                <option value="G">G</option>
+                            </select>
+                            <select class="colores">
+                                <option value="BLANCO">BLANCO</option>
+                                <option value="NEGRO">NEGRO</option>
+                                <option value="AZUL">AZUL</option>
+                            </select>
+                        </div>
+                        <button type="button" class="agregar_al_carro btn btn-outline-warning add" data-id="9">Agregar Al Carrito</button>
+                    </ul>
+                </div>
+            </section>
+            <section id="secCate">
+                <div class="divCate1 item">
+                    <img src="/imagenes/top_branca.jpg" class="divCate1__imgCate">
+                    <img src="/imagenes/top_branca2.jpg" class="divCate1__imgCate_1">
+                    <p class="divCate1__pCate">TOP BRANCA</p>
+                    <ul>
+                        <li class="descripcion">$1000</li>
+                        <div class="opciones">
+                            <select class="talles">
+                                <option value="P">P</option>
+                                <option value="M">M</option>
+                                <option value="G">G</option>
+                            </select>
+                            <select class="colores">
+                                <option value="BLANCO">BLANCO</option>
+                                <option value="NEGRO">NEGRO</option>
+                                <option value="AZUL">AZUL</option>
+                                <option value="NARANJA">NARANJA</option>
+                                <option value="BEIGE">BEIGE</option>
+                            </select>
+                        </div>
+                        <button type="button" class="agregar_al_carro btn btn-outline-warning add" data-id="10">Agregar Al Carrito</button>
+                    </ul>
+                </div>
+            </section>
+            <section id="secCate">
+                <div class="divCate1 item">
+                    <img src="/imagenes/body_chain_clasico.jpg" class="divCate1__imgCate">
+                    <img src="/imagenes/body_chain_clasico2.jpg" class="divCate1__imgCate_1">
+                    <p class="divCate1__pCate">BODYCHAIN CLASICO</p>
+                    <ul>
+                        <li class="descripcion">$1150</li>
+                        <div class="opciones">
+                            <select class="talles">
+                                <option value="-">-</option>
+                            </select>
+                            <select class="colores">
+                                <option value="PLATEADO">PLATEADO</option>
+                                <option value="DORADO">DORADO</option>
+                        </select>
+                        </div>
+                        <button type="button" class="agregar_al_carro btn btn-outline-warning add" data-id="12">Agregar Al Carrito</button>
+                    </ul>
+                </div>
+            </section>
+            <section id="secCate">
+                <div class="divCate1 item">
+                    <img src="/imagenes/body_chain_choker.jpg" class="divCate1__imgCate">
+                    <img src="/imagenes/body_chain_choker2.jpg" class="divCate1__imgCate_1">
+                    <p class="divCate1__pCate">BODYCHAIN CHOKER</p>
+                    <ul>
+                        <li class="descripcion">$1400</li>
+                        <div class="opciones">
+                            <select class="talles">
+                                <option value="-">-</option>
+                            </select>
+                            <select class="colores">
+                                <option value="-">-</option>
+                            </select>
+                        </div>
+                        <button type="button" class="agregar_al_carro btn btn-outline-warning add" data-id="13">Agregar Al Carrito</button>
+                    </ul>
+                </div>
+            </section>
+            <section id="secCate">
+                <div class="divCate1 item">
+                    <img src="/imagenes/body_chain_pierna.jpg" class="divCate1__imgCate">
+                    <img src="/imagenes/body_chain_pierna2.jpg" class="divCate1__imgCate_1">
+                    <p class="divCate1__pCate">BODYCHAIN PIERNA</p>
+                    <ul>
+                        <li class="descripcion">$1600</li>
+                        <div class="opciones">
+                            <select class="talles">
+                                <option value="-">-</option>
+                            </select>
+                            <select class="colores">
+                                <option value="-">-</option>
+                            </select>
+                        </div>
+                        <button type="button" class="agregar_al_carro btn btn-outline-warning add" data-id="14">Agregar Al Carrito</button>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+    <template id="template-footer">
+        <th scope="row" colspan="2" class="total">Total productos</th>
+        <td>10</td>
+        <td>
+            
+            <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                Vaciar Todo
+            </button>
+        </td>
+        <td class="font-weight-bold">$ <span>5000</span></td>
+    </template>
+
+    <template id="template-carrito">
+        <tr>
+          <th scope="row">id</th>
+          <td></td>
+          <td ></td>
+          <td></td>
+          <td class="cant">1</td>
+          <td>
+              <button class="btn btn-info btn-sm">
+                  +
+              </button>
+              <button class="btn btn-danger btn-sm">
+                  -
+              </button>
+          </td>
+          <td>$ <span>500</span></td>
+        </tr>
+          
+      </template>
+
+    <div id="tablaDom">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel">CARRITO</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="card card-body" style="width: 100%;">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Item</th>
+                                <th scope="col" class="cant">Cantidad</th>
+                                <th scope="col">Acción</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="items"></tbody>
+                        <tfoot>
+                            <tr id="footer">
+                                <th class="carritoVacio" scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <button class="btn btn-info btn-sm" id="comprar-carrito">
+                        <a class="comprar" href="contacto.html">Comprar</a>
+                      </button>
+                      
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer ">
+            <!-- footer -->
+            <div class="footer__info ">
+                <a href="/index.html "><img class="footer__logo " src="/imagenes/logo_felixa.jpg "></a>
+            </div>
+
+            <div class="footer__lista ">
+                <ul class="lista__ul ">
+                    <li class="lista__li "><a id="arriba" class="lista__a " href="prodTodos.html">Ir Arriba</a></li>
+                    <li class="lista__li "><a class="lista__a " href="/index.html ">Volver Al Inicio</a></li>
+                    <li class="lista__li "><a class="lista__a " href="contacto.html ">Contacto</a></li>
+                    <li class="lista__li ">
+                        <a class="lista__a " href="https://www.instagram.com/felixa.ba/?hl=es-la "><img src="/imagenes/insta.png " class="insta_footer "></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr class="linea ">
+        <div class="footer__copy ">
+            Copyright &copy; Felixa. Todos los derechos reservados
+        </div>
+    </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ " crossorigin="anonymous "></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js " integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin=" anonymous "></script>
+    <script src="../js/main.js "></script>
+    <!-- <script src="../js/alerta.js"></script> -->
+    <div class="finalPagina"></div>
+</body>
+
+</html>

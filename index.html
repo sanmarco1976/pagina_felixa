@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="_t-7XTSB9snd4A3TPx8kzEplicI8cRTD-JYQ7H7yVwo" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconectar" href="https://fonts.googleapis.com">
+    <link rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? family= Calabacín & display=swap" rel="hoja de estilo">
+    <link rel="icon" href="imagenes/logo_felixa.jpg">
+    <title>Felixa</title>
+    <meta name="description" content="Este es el sitio web de Felixa, el cual se encarga de la venta minorista, de la venta mayorista y la distribucion de una amplia variedad de articulos">
+    <meta name="keywords" content="Inicio, Contacto, Productos">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid navegacion">
+            <a href="index.html" class="navegacion__logo"><img class="nav__logo" src="imagenes/logo_felixa.jpg"></a>
+            <div class="collapse navbar-collapse navegacion_items  " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item itemTexto"><a class="nav-link " aria-current="page" href="index.html">inicio</a></li>
+                    <li class="nav-item itemTexto"><a class="nav-link" href="html/contacto.html">contacto</a></li>
+                    <li class="nav-item dropdown itemTexto">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">productos</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li class="itemDesplegable"><a class="dropdown-item" href="html/prodTodos.html">todos los productos</a></li>
+                            <li class="itemDesplegable"><a class="dropdown-item" href="html/prodAllDay.html">ALL-DAY</a></li>
+                            <li class="itemDesplegable"><a class="dropdown-item" href="html/prodNigth.html">NIGTH</a></li>
+                            <li class="itemDesplegable"><a class="dropdown-item" href="html/newCollection.html">NEW-COLLECTION</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-light bg-light fixed-top barraCelu">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="index.html" class="navegacion__logo"><img class="nav__logo" src="imagenes/logo_felixa.jpg"></a>
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title navBarh5" id="offcanvasNavbarLabel">FELIXA</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categorias
+                  </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item" href="html/prodTodos.html">TODOS LOS PRODUCTOS</a></li>
+                                <li><a class="dropdown-item" href="html/prodAllDay.html">ALL-DAY</a></li>
+                                <li><a class="dropdown-item" href="html/prodNigth.html">NIGTH</a></li>
+                                <li><a class="dropdown-item" href="html/newCollection.html">NEW-COLLECTION</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagenes/principal_1_rec.jpg" class="d-block w-100 imagen_inicio" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/principal_2_recortada.jpg" class="d-block w-100 imagen_inicio" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/principal_3_rec.jpg" class="d-block w-100 imagen_inicio" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="texto_inicio">
+        <p class="texto_libres">Libres y comodas</p>
+        <p class="texto_quienes_somos">Somos Ste y Lety, amigas hace + de treinta años... Y quisimos crear este espacio donde podamos sentirnos comodas y libres. Esperamos que lo sientan junto a nosotras♥</p>
+    </div>
+    <div class="frase_incio">
+        <img src="imagenes/flores_felixa_iz.png" class="flores">
+        <img src="imagenes/frase_inicio.jpg" class="imagen_frase">
+        <img src="imagenes/flores_felixa.png" class="flores">
+    </div>
+    <footer>
+        <div class="footer">
+            <!-- footer -->
+            <div class="footer__info">
+                <a href="index.html"><img class="footer__logo" src="imagenes/logo_felixa.jpg"></a>
+            </div>
+
+            <div class="footer__lista">
+                <ul class="lista__ul">
+                    <li class="lista__li"><a class="lista__a" href="index.html">Ir Arriba</a></li>
+                    <li class="lista__li"><a class="lista__a" href="index.html">Volver Al Inicio</a></li>
+                    <li class="lista__li"><a class="lista__a" href="html/contacto.html">Contacto</a></li>
+                    <li class="lista__li">
+                        <a class="lista__a" href="https://www.instagram.com/felixa.ba/?hl=es-la"><img src="imagenes/insta.png" class="insta_footer"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr class="linea">
+        <div class="footer__copy">
+            Copyright &copy; Felixa. Todos los derechos reservados
+        </div>
+    </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!-- <script src="js/alerta.js"></script> -->
+    <div class="finalPagina"></div>
+</body>
+
+</html>

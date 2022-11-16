@@ -1,0 +1,216 @@
+@media only screen and (max-width: 1440px) {
+    .productosAll {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "b1 b2 b3" "b4 b5 b6" "b7 b8 b9" "b10 b11 b12" "b13 b14 b15" "b16 b17 b18" "b19 b20 none";
+    }
+    .divCate1__imgCate,
+    .divCate1__imgCate_1 {
+        width: 15rem;
+        height: 23rem;
+    }
+    html {
+        height: 100%;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+    }
+    footer {
+        margin-top: auto;
+    }
+    .offcanvas {
+        width: 80%;
+    }
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row!important;
+    }
+    .collapse:not(.show) {
+        display: flex;
+    }
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: absolute;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .divCate1__imgCate,
+    .divCate1__imgCate_1 {
+        width: 12rem;
+        height: 20rem;
+    }
+    .texto_quienes_somos {
+        padding: 0em;
+    }
+    .imagen_inicio {
+        height: 30rem;
+    }
+    .imagen_frase {
+        width: 20rem;
+    }
+    .flores {
+        width: 10rem;
+    }
+    .itemTexto {
+        font-size: 1.7rem;
+    }
+    .dropdown-item {
+        font-size: 1.2rem;
+    }
+    .divCate1__pCate,
+    .descripcion {
+        font-size: 1.2rem;
+    }
+    .divCate1__imgCate,
+    .divCate1__imgCate_1 {
+        width: 10rem;
+        height: 18rem;
+    }
+    .btn-outline-warning {
+        font-size: 1rem;
+        margin-right: 0.5rem;
+        margin-left: 0rem;
+    }
+    .table>:not(caption)>*>* {
+        padding: 0;
+    }
+    .selectorImagenes{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .encabezado_todos,.encabezado,.encabezado_nigth{
+        margin-top: 7rem!important;
+    }
+    .productosAll {
+        grid-template-columns: 1fr;
+        grid-template-areas: "b1" "b2" "b3" "b4" "b5" "b6" "b7" "b8" "b9" "b10" "b11" "b12" "b13" "b14" "b15" "b16" "b17" "b18" "b19" "b20";
+    }
+    .divCate1__imgCate,
+    .divCate1__imgCate_1 {
+        width: 17rem;
+        height: 25rem;
+    }
+    .divCate1__pCate,
+    .descripcion {
+        font-size: 1.7rem;
+    }
+    .btn-outline-warning {
+        font-size: 1.4rem;
+    }
+    .footer__logo {
+        width: 10rem;
+        height: 10rem;
+    }
+    .footer {
+        grid-template-columns: 1fr 0.3fr 1fr;
+        grid-template-areas: "logo none lista ";
+    }
+    .encabezado_p_nigth,
+    .encabezado_p {
+        font-size: 2.5rem;
+    }
+    .navbar {
+        display: none;
+    }
+    .barraCelu {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+    .encabezado_todos,
+    .encabezado,
+    .encabezado_nigth {
+        margin-top: 5rem;
+    }
+    .itemDesplegable,
+    .itemTexto,
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 1.3rem;
+    }
+    .btn-dark,
+    .btn-check:active+.btn-dark,
+    .btn-check:checked+.btn-dark,
+    .btn-dark.active,
+    .btn-dark:active,
+    .show>.btn-dark.dropdown-toggle .btn-check:focus+.btn-dark,
+    .btn-dark:focus,
+    .btn-dark:hover {
+        margin-bottom: 1rem;
+    }
+    .imagen_inicio {
+        height: 25rem;
+    }
+    .texto_libres {
+        font-size: 2.5rem;
+    }
+    .texto_quienes_somos {
+        font-size: 1.5rem;
+    }
+    .imagen_frase {
+        width: 13rem;
+        height: 13rem;
+    }
+    .flores {
+        width: 7rem;
+    }
+    .offcanvas {
+        width: 100%;
+        height: 75%;
+    }
+    .card-body {
+        padding: 0;
+    }
+    .offcanvas-body {
+        padding: 0;
+    }
+    tbody,
+    td,
+    tfoot,
+    th,
+    thead,
+    tr {
+        width: 0.7px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    tr {
+        margin-bottom: 1rem;
+    }
+    .font-weight-bold {
+        width: 2rem;
+    }
+    th.carritoVacio{
+        color: black;
+    }
+    th{
+        color: #f4e3d3;
+    }
+    th.total{
+        color: black;
+    }
+    .flores {
+        width: 4rem;
+    }
+    .selectorImagenes{
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .imagen_frase {
+        width: 12rem;
+        height: 12rem;
+    }
+    .divCate1__imgCate, .divCate1__imgCate_1 {
+        width: 15.7rem;
+        height: 23rem;
+    }
+}
